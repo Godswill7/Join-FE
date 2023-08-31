@@ -1,5 +1,5 @@
 import { RouterProvider } from "react-router-dom";
-import { mainRoute } from "./router/mainRouter";
+import  mainRouter  from "./router/mainRouter";
 import { Provider } from "react-redux";
 import { store } from "./global/store";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
@@ -10,7 +10,7 @@ const App = () => {
     <div>
       <QueryClientProvider client={client}>
         <Provider store={store}>
-          <RouterProvider router={mainRoute} />
+          <RouterProvider router={mainRouter} />
         </Provider>
       </QueryClientProvider>
     </div>
